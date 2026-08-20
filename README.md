@@ -9,6 +9,7 @@ locations, sections, strata, lithology, facies, and geological age. The method
 combines a SciBERT span classifier, multi-model voting, and confidence-weighted
 curriculum learning.
 
+
 ## Repository structure
 
 ```text
