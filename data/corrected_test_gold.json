@@ -44,12 +44,6 @@
         "end": 347,
         "entity_type": "location",
         "text": "southeastern coast of Lutao"
-      },
-      {
-        "start": 433,
-        "end": 444,
-        "entity_type": "age",
-        "text": "230Th dated"
       }
     ]
   },
@@ -124,12 +118,6 @@
         "text": "South Wales"
       },
       {
-        "start": 13,
-        "end": 23,
-        "entity_type": "location",
-        "text": "Alcheringa"
-      },
-      {
         "start": 28,
         "end": 40,
         "entity_type": "location",
@@ -155,9 +143,9 @@
       },
       {
         "start": 71,
-        "end": 85,
+        "end": 79,
         "entity_type": "taxa",
-        "text": "ostracod fauna"
+        "text": "ostracod"
       },
       {
         "start": 216,
@@ -346,12 +334,6 @@
       {
         "start": 320,
         "end": 334,
-        "entity_type": "location",
-        "text": "shallow marine"
-      },
-      {
-        "start": 320,
-        "end": 334,
         "entity_type": "facies",
         "text": "shallow marine"
       },
@@ -364,7 +346,7 @@
       {
         "start": 354,
         "end": 363,
-        "entity_type": "lithology",
+        "entity_type": "facies",
         "text": "sand bars"
       },
       {
@@ -500,22 +482,10 @@
         "text": "Ostracoda"
       },
       {
-        "start": 81,
-        "end": 100,
-        "entity_type": "location",
-        "text": "Carleton University"
-      },
-      {
         "start": 102,
         "end": 108,
         "entity_type": "location",
         "text": "Ottawa"
-      },
-      {
-        "start": 110,
-        "end": 124,
-        "entity_type": "age",
-        "text": "79: 1-104 1979"
       },
       {
         "start": 135,
@@ -537,15 +507,15 @@
       },
       {
         "start": 313,
-        "end": 347,
+        "end": 338,
         "entity_type": "taxa",
-        "text": "Eucytherura zambujalensis sp. nov."
+        "text": "Eucytherura zambujalensis"
       },
       {
         "start": 349,
-        "end": 386,
+        "end": 377,
         "entity_type": "taxa",
-        "text": "Ektyphocythere mediodepressa sp. nov."
+        "text": "Ektyphocythere mediodepressa"
       },
       {
         "start": 397,
@@ -745,10 +715,10 @@
         "text": "carbonate"
       },
       {
-        "start": 502,
+        "start": 512,
         "end": 520,
         "entity_type": "taxa",
-        "text": "Epifaunal bivalves"
+        "text": "bivalves"
       },
       {
         "start": 530,
@@ -781,10 +751,10 @@
     "text": "Infaunal suspension-feeding bivalves expanded to offshore habitats during nutrient-rich, siliciclastic regimes and retreated from offshore habitats during nutrient-poor, carbonate regimes. Thus, the onshore to offshore retreat of brachiopods and the offshore expansion of infaunal bivalves repeatedly coincided with the switch from a nutrient-poor, carbonate regime to a nutrient-rich, siliciclastic regime. Because brachiopods and epifaunal bivalves were abundant in micrite-rich, soft-bottom habitats, the replacements between infaunal and epifaunal communities cannot be explained by variations in substrate consistency alone.",
     "entities": [
       {
-        "start": 0,
+        "start": 28,
         "end": 36,
         "entity_type": "taxa",
-        "text": "Infaunal suspension-feeding bivalves"
+        "text": "bivalves"
       },
       {
         "start": 49,
@@ -805,10 +775,10 @@
         "text": "offshore habitats"
       },
       {
-        "start": 155,
+        "start": 170,
         "end": 179,
         "entity_type": "lithology",
-        "text": "nutrient-poor, carbonate"
+        "text": "carbonate"
       },
       {
         "start": 199,
@@ -829,10 +799,10 @@
         "text": "offshore"
       },
       {
-        "start": 272,
+        "start": 281,
         "end": 289,
         "entity_type": "taxa",
-        "text": "infaunal bivalves"
+        "text": "bivalves"
       },
       {
         "start": 334,
@@ -853,10 +823,10 @@
         "text": "brachiopods"
       },
       {
-        "start": 432,
+        "start": 442,
         "end": 450,
         "entity_type": "taxa",
-        "text": "epifaunal bivalves"
+        "text": "bivalves"
       },
       {
         "start": 468,
@@ -890,9 +860,9 @@
       },
       {
         "start": 90,
-        "end": 111,
+        "end": 98,
         "entity_type": "facies",
-        "text": "offshore replacements"
+        "text": "offshore"
       },
       {
         "start": 142,
@@ -907,28 +877,10 @@
         "text": "brachiopods"
       },
       {
-        "start": 259,
-        "end": 272,
-        "entity_type": "facies",
-        "text": "oxygen levels"
-      },
-      {
         "start": 305,
         "end": 316,
         "entity_type": "taxa",
         "text": "brachiopods"
-      },
-      {
-        "start": 339,
-        "end": 363,
-        "entity_type": "facies",
-        "text": "nutrient-poor conditions"
-      },
-      {
-        "start": 418,
-        "end": 432,
-        "entity_type": "facies",
-        "text": "high-turbidity"
       },
       {
         "start": 449,
@@ -937,10 +889,10 @@
         "text": "bivalves"
       },
       {
-        "start": 459,
+        "start": 469,
         "end": 477,
         "entity_type": "taxa",
-        "text": "Epifaunal bivalves"
+        "text": "bivalves"
       },
       {
         "start": 497,
@@ -955,10 +907,10 @@
         "text": "nutrient-poor habitats"
       },
       {
-        "start": 604,
+        "start": 613,
         "end": 621,
         "entity_type": "taxa",
-        "text": "infaunal bivalves"
+        "text": "bivalves"
       }
     ]
   },
@@ -966,12 +918,6 @@
     "sample_idx": 22,
     "text": "Although higher biogenic sediment disturbance or other biotic interactions could play a significant role in the retreat of brachiopods to offshore habitats, this study highlights the importance of varying nutrient supply and turbidity in governing onshore to offshore replacements on short time scales.",
     "entities": [
-      {
-        "start": 9,
-        "end": 33,
-        "entity_type": "facies",
-        "text": "higher biogenic sediment"
-      },
       {
         "start": 123,
         "end": 134,
@@ -986,9 +932,15 @@
       },
       {
         "start": 248,
+        "end": 255,
+        "entity_type": "facies",
+        "text": "onshore"
+      },
+      {
+        "start": 259,
         "end": 267,
         "entity_type": "facies",
-        "text": "onshore to offshore"
+        "text": "offshore"
       }
     ]
   },
@@ -1029,7 +981,7 @@
       {
         "start": 362,
         "end": 380,
-        "entity_type": "lithology",
+        "entity_type": "facies",
         "text": "muddy environments"
       }
     ]
@@ -1039,16 +991,10 @@
     "text": "Stalked-eyes were independently derived in several trilobite clades, but whenever they appeared were restricted to small numbers of taxa and thus do not appear to have served as a key innovation that promoted extensive diversification of species bearing the structure. The stalk-eyed condition in trilobites has a striking modern analog in the hypercephaly of diopsinid flies, where it is commonly associated with mate recognition and mate selection. We document the first occurrence of Parabackwelderia in Shandong, North China and describe a new species, Parabackwelderia luensis sp. nov.",
     "entities": [
       {
-        "start": 0,
-        "end": 12,
-        "entity_type": "taxa",
-        "text": "Stalked-eyes"
-      },
-      {
         "start": 51,
-        "end": 67,
+        "end": 60,
         "entity_type": "taxa",
-        "text": "trilobite clades"
+        "text": "trilobite"
       },
       {
         "start": 297,
@@ -1082,9 +1028,9 @@
       },
       {
         "start": 557,
-        "end": 590,
+        "end": 581,
         "entity_type": "taxa",
-        "text": "Parabackwelderia luensis sp. nov."
+        "text": "Parabackwelderia luensis"
       }
     ]
   },
@@ -1159,12 +1105,6 @@
         "text": "Oaxaquia"
       },
       {
-        "start": 290,
-        "end": 304,
-        "entity_type": "location",
-        "text": "microcontinent"
-      },
-      {
         "start": 332,
         "end": 348,
         "entity_type": "location",
@@ -1226,9 +1166,9 @@
       },
       {
         "start": 321,
-        "end": 349,
+        "end": 342,
         "entity_type": "taxa",
-        "text": "Tapuritreta reclinata n. sp."
+        "text": "Tapuritreta reclinata"
       },
       {
         "start": 351,
@@ -1238,9 +1178,9 @@
       },
       {
         "start": 370,
-        "end": 383,
+        "end": 380,
         "entity_type": "taxa",
-        "text": "Eurytreta? n."
+        "text": "Eurytreta?"
       }
     ]
   },
@@ -1250,15 +1190,15 @@
     "entities": [
       {
         "start": 5,
-        "end": 32,
+        "end": 17,
         "entity_type": "taxa",
-        "text": "Acrotretidae n. gen. n. sp."
+        "text": "Acrotretidae"
       },
       {
         "start": 34,
-        "end": 47,
+        "end": 42,
         "entity_type": "taxa",
-        "text": "Obolinae gen."
+        "text": "Obolinae"
       }
     ]
   },
@@ -1269,19 +1209,19 @@
       {
         "start": 32,
         "end": 42,
-        "entity_type": "age",
+        "entity_type": "location",
         "text": "Laurentian"
       },
       {
         "start": 44,
         "end": 53,
-        "entity_type": "age",
+        "entity_type": "location",
         "text": "Gondwanan"
       },
       {
         "start": 58,
         "end": 67,
-        "entity_type": "age",
+        "entity_type": "location",
         "text": "Avalonian"
       },
       {
@@ -1328,9 +1268,9 @@
     "entities": [
       {
         "start": 6,
-        "end": 19,
+        "end": 14,
         "entity_type": "taxa",
-        "text": "Obolinae gen."
+        "text": "Obolinae"
       }
     ]
   },
@@ -1370,9 +1310,9 @@
       },
       {
         "start": 21,
-        "end": 38,
+        "end": 33,
         "entity_type": "taxa",
-        "text": "Acrotretidae gen."
+        "text": "Acrotretidae"
       }
     ]
   },
@@ -1418,9 +1358,9 @@
       },
       {
         "start": 252,
-        "end": 268,
+        "end": 265,
         "entity_type": "taxa",
-        "text": "Oaxaquiatreta n."
+        "text": "Oaxaquiatreta"
       }
     ]
   },
@@ -1447,10 +1387,10 @@
     "text": "Fossil coral communities are often simply considered as \"coral reefs.\" In fact, coral-bearing communities are not necessarily coral reefs. The key criterion is whether the corals are in situ and if they are abundant enough to form topographic relief.",
     "entities": [
       {
-        "start": 0,
-        "end": 24,
+        "start": 7,
+        "end": 12,
         "entity_type": "taxa",
-        "text": "Fossil coral communities"
+        "text": "coral"
       },
       {
         "start": 57,
@@ -1460,9 +1400,9 @@
       },
       {
         "start": 80,
-        "end": 105,
+        "end": 85,
         "entity_type": "taxa",
-        "text": "coral-bearing communities"
+        "text": "coral"
       },
       {
         "start": 126,
@@ -1507,22 +1447,10 @@
         "text": "Tarim Basin"
       },
       {
-        "start": 166,
-        "end": 185,
-        "entity_type": "section",
-        "text": "large thin sections"
-      },
-      {
         "start": 247,
         "end": 258,
         "entity_type": "facies",
         "text": "coral reefs"
-      },
-      {
-        "start": 263,
-        "end": 276,
-        "entity_type": "facies",
-        "text": "coral-bearing"
       },
       {
         "start": 278,
@@ -1652,27 +1580,39 @@
       },
       {
         "start": 426,
-        "end": 448,
+        "end": 438,
         "entity_type": "taxa",
-        "text": "Vermiporella community"
+        "text": "Vermiporella"
       },
       {
         "start": 450,
-        "end": 465,
+        "end": 455,
         "entity_type": "taxa",
-        "text": "coral community"
+        "text": "coral"
       },
       {
         "start": 467,
-        "end": 490,
+        "end": 474,
         "entity_type": "taxa",
-        "text": "crinoid-coral community"
+        "text": "crinoid"
+      },
+      {
+        "start": 475,
+        "end": 480,
+        "entity_type": "taxa",
+        "text": "coral"
       },
       {
         "start": 495,
-        "end": 526,
+        "end": 508,
         "entity_type": "taxa",
-        "text": "dasycladacean-crinoid community"
+        "text": "dasycladacean"
+      },
+      {
+        "start": 509,
+        "end": 516,
+        "entity_type": "taxa",
+        "text": "crinoid"
       }
     ]
   },
@@ -1719,7 +1659,7 @@
       {
         "start": 192,
         "end": 203,
-        "entity_type": "location",
+        "entity_type": "section",
         "text": "well TZ 822"
       },
       {
@@ -1743,7 +1683,7 @@
       {
         "start": 310,
         "end": 321,
-        "entity_type": "location",
+        "entity_type": "section",
         "text": "well TZ 822"
       },
       {
@@ -1773,7 +1713,7 @@
       {
         "start": 426,
         "end": 439,
-        "entity_type": "age",
+        "entity_type": "taxa",
         "text": "dasycladacean"
       },
       {
@@ -1791,7 +1731,7 @@
       {
         "start": 511,
         "end": 521,
-        "entity_type": "location",
+        "entity_type": "section",
         "text": "well TZ 35"
       },
       {
@@ -2030,9 +1970,9 @@
       },
       {
         "start": 315,
-        "end": 332,
+        "end": 326,
         "entity_type": "taxa",
-        "text": "radiolarian fauna"
+        "text": "radiolarian"
       },
       {
         "start": 388,
@@ -2168,9 +2108,9 @@
       },
       {
         "start": 289,
-        "end": 318,
+        "end": 309,
         "entity_type": "taxa",
-        "text": "Shivaella elertensis sp. nov."
+        "text": "Shivaella elertensis"
       },
       {
         "start": 319,
@@ -2279,12 +2219,6 @@
         "end": 176,
         "entity_type": "taxa",
         "text": "ammonoids"
-      },
-      {
-        "start": 302,
-        "end": 315,
-        "entity_type": "age",
-        "text": "1866 and 1953"
       }
     ]
   },
@@ -2299,9 +2233,9 @@
     "entities": [
       {
         "start": 55,
-        "end": 70,
+        "end": 63,
         "entity_type": "taxa",
-        "text": "ammonoid genera"
+        "text": "ammonoid"
       },
       {
         "start": 112,
@@ -2311,9 +2245,9 @@
       },
       {
         "start": 154,
-        "end": 174,
+        "end": 167,
         "entity_type": "taxa",
-        "text": "T. bonarellii n. sp."
+        "text": "T. bonarellii"
       },
       {
         "start": 355,
@@ -2327,12 +2261,6 @@
     "sample_idx": 47,
     "text": "Department of Geology, State University of New York at Buffalo, 4240 Ridge Lea Road, Amherst, NY 14226, U.S.A.",
     "entities": [
-      {
-        "start": 23,
-        "end": 51,
-        "entity_type": "location",
-        "text": "State University of New York"
-      },
       {
         "start": 55,
         "end": 62,
@@ -2371,9 +2299,9 @@
       },
       {
         "start": 15,
-        "end": 36,
+        "end": 24,
         "entity_type": "taxa",
-        "text": "gastropod assemblages"
+        "text": "gastropod"
       },
       {
         "start": 42,
@@ -2401,9 +2329,9 @@
       },
       {
         "start": 206,
-        "end": 227,
+        "end": 215,
         "entity_type": "taxa",
-        "text": "gastropod assemblages"
+        "text": "gastropod"
       },
       {
         "start": 257,
@@ -2485,9 +2413,15 @@
       },
       {
         "start": 85,
+        "end": 91,
+        "entity_type": "location",
+        "text": "Vienna"
+      },
+      {
+        "start": 93,
         "end": 100,
         "entity_type": "location",
-        "text": "Vienna, Austria"
+        "text": "Austria"
       }
     ]
   },
@@ -2504,14 +2438,7 @@
   {
     "sample_idx": 53,
     "text": "at O. Mandic e-mail: oleg.mandic@nhm-wien.",
-    "entities": [
-      {
-        "start": 3,
-        "end": 12,
-        "entity_type": "location",
-        "text": "O. Mandic"
-      }
-    ]
+    "entities": []
   },
   {
     "sample_idx": 54,
@@ -2523,12 +2450,6 @@
     "text": "E. Piller Institute of Earth Sciences, Geology and Palaeontology, Graz University, Heinrichstrasse 26, 8010 Graz, Austria e-mail: markus.reuter@uni-graz.",
     "entities": [
       {
-        "start": 66,
-        "end": 81,
-        "entity_type": "location",
-        "text": "Graz University"
-      },
-      {
         "start": 108,
         "end": 112,
         "entity_type": "location",
@@ -2539,12 +2460,6 @@
         "end": 121,
         "entity_type": "location",
         "text": "Austria"
-      },
-      {
-        "start": 144,
-        "end": 152,
-        "entity_type": "location",
-        "text": "uni-graz"
       }
     ]
   },
@@ -2557,12 +2472,6 @@
     "sample_idx": 57,
     "text": "piller@uni-graz.at B. Berning Upper Austrian State Museum, Welserstr.",
     "entities": [
-      {
-        "start": 30,
-        "end": 57,
-        "entity_type": "location",
-        "text": "Upper Austrian State Museum"
-      },
       {
         "start": 59,
         "end": 69,
@@ -2666,12 +2575,6 @@
         "text": "Miocene"
       },
       {
-        "start": 388,
-        "end": 394,
-        "entity_type": "age",
-        "text": "Seicht"
-      },
-      {
         "start": 395,
         "end": 401,
         "entity_type": "facies",
@@ -2750,12 +2653,6 @@
         "text": "West-Tethys"
       },
       {
-        "start": 29,
-        "end": 42,
-        "entity_type": "taxa",
-        "text": "Gesamta fauna"
-      },
-      {
         "start": 68,
         "end": 74,
         "entity_type": "location",
@@ -2772,12 +2669,6 @@
         "end": 211,
         "entity_type": "age",
         "text": "frühen Miozän"
-      },
-      {
-        "start": 227,
-        "end": 233,
-        "entity_type": "taxa",
-        "text": "Faunen"
       }
     ]
   },
@@ -2937,9 +2828,9 @@
       },
       {
         "start": 192,
-        "end": 218,
+        "end": 211,
         "entity_type": "taxa",
-        "text": "Aciculolenus askewi n. sp."
+        "text": "Aciculolenus askewi"
       },
       {
         "start": 220,
@@ -2955,9 +2846,9 @@
       },
       {
         "start": 312,
-        "end": 335,
+        "end": 328,
         "entity_type": "taxa",
-        "text": "Cliffia nicoleae n. sp."
+        "text": "Cliffia nicoleae"
       },
       {
         "start": 337,
@@ -3157,12 +3048,6 @@
         "text": "Cypridea dunkeri zone"
       },
       {
-        "start": 66,
-        "end": 82,
-        "entity_type": "location",
-        "text": "Cypridea dunkeri"
-      },
-      {
         "start": 255,
         "end": 261,
         "entity_type": "location",
@@ -3191,12 +3076,6 @@
         "end": 515,
         "entity_type": "location",
         "text": "Dorset coast"
-      },
-      {
-        "start": 554,
-        "end": 558,
-        "entity_type": "age",
-        "text": "1857"
       }
     ]
   },
@@ -3204,12 +3083,6 @@
     "sample_idx": 72,
     "text": "$^{a}$ Department of Palaeontology, British Museum (Natural History), Cromwell Road, London, S.W.7, England <sup>b</sup> Department of Earth Sciences, University of Waterloo, Waterloo, Ontario, N2L 3G1, Canada",
     "entities": [
-      {
-        "start": 36,
-        "end": 50,
-        "entity_type": "location",
-        "text": "British Museum"
-      },
       {
         "start": 70,
         "end": 83,
@@ -3227,12 +3100,6 @@
         "end": 107,
         "entity_type": "location",
         "text": "England"
-      },
-      {
-        "start": 151,
-        "end": 173,
-        "entity_type": "location",
-        "text": "University of Waterloo"
       },
       {
         "start": 175,
@@ -3296,9 +3163,9 @@
       },
       {
         "start": 313,
-        "end": 338,
+        "end": 322,
         "entity_type": "lithology",
-        "text": "carbonate carbon isotopes"
+        "text": "carbonate"
       },
       {
         "start": 346,
@@ -3317,12 +3184,6 @@
         "end": 152,
         "entity_type": "taxa",
         "text": "corals"
-      },
-      {
-        "start": 162,
-        "end": 177,
-        "entity_type": "taxa",
-        "text": "holdover genera"
       },
       {
         "start": 187,
@@ -3373,12 +3234,6 @@
         "text": "shelf setting of the reef"
       },
       {
-        "start": 70,
-        "end": 85,
-        "entity_type": "location",
-        "text": "oceanic islands"
-      },
-      {
         "start": 120,
         "end": 126,
         "entity_type": "taxa",
@@ -3427,12 +3282,6 @@
     "text": "Department of Geology, University of Otago, Dunedin, New Zealand (Received 22 February 2010; final version received 6 May 2010)",
     "entities": [
       {
-        "start": 23,
-        "end": 42,
-        "entity_type": "location",
-        "text": "University of Otago"
-      },
-      {
         "start": 44,
         "end": 51,
         "entity_type": "location",
@@ -3443,18 +3292,6 @@
         "end": 64,
         "entity_type": "location",
         "text": "New Zealand"
-      },
-      {
-        "start": 75,
-        "end": 91,
-        "entity_type": "age",
-        "text": "22 February 2010"
-      },
-      {
-        "start": 116,
-        "end": 126,
-        "entity_type": "age",
-        "text": "6 May 2010"
       }
     ]
   },
@@ -3568,9 +3405,9 @@
       },
       {
         "start": 343,
-        "end": 359,
+        "end": 353,
         "entity_type": "taxa",
-        "text": "brachiopod fauna"
+        "text": "brachiopod"
       },
       {
         "start": 367,
@@ -3619,12 +3456,6 @@
     "sample_idx": 86,
     "text": ", June, 2008. New Early Triassic Lingulidae (Brachiopoda) genera and species from South China. Alcheringa 32, 149-170.",
     "entities": [
-      {
-        "start": 2,
-        "end": 12,
-        "entity_type": "age",
-        "text": "June, 2008"
-      },
       {
         "start": 18,
         "end": 32,
@@ -3740,39 +3571,33 @@
     "entities": [
       {
         "start": 10,
-        "end": 40,
+        "end": 33,
         "entity_type": "taxa",
-        "text": "Thaumastoplax rocaensis n. sp."
+        "text": "Thaumastoplax rocaensis"
       },
       {
         "start": 42,
-        "end": 80,
+        "end": 64,
         "entity_type": "taxa",
-        "text": "Proterocarcinus lophos n. gen. and sp."
+        "text": "Proterocarcinus lophos"
       },
       {
         "start": 82,
-        "end": 107,
+        "end": 100,
         "entity_type": "taxa",
-        "text": "Lobonotus lobulata n. sp."
+        "text": "Lobonotus lobulata"
       },
       {
         "start": 109,
-        "end": 139,
+        "end": 132,
         "entity_type": "taxa",
-        "text": "Glyphithyreus wichmanni n. sp."
+        "text": "Glyphithyreus wichmanni"
       },
       {
         "start": 145,
-        "end": 174,
+        "end": 167,
         "entity_type": "taxa",
-        "text": "Costacopluma australis n. sp."
-      },
-      {
-        "start": 145,
-        "end": 157,
-        "entity_type": "taxa",
-        "text": "Costacopluma"
+        "text": "Costacopluma australis"
       },
       {
         "start": 213,
@@ -3805,12 +3630,6 @@
         "text": "New Zealand"
       },
       {
-        "start": 362,
-        "end": 376,
-        "entity_type": "location",
-        "text": "lower latitude"
-      },
-      {
         "start": 378,
         "end": 386,
         "entity_type": "location",
@@ -3836,9 +3655,9 @@
       },
       {
         "start": 530,
-        "end": 546,
+        "end": 540,
         "entity_type": "taxa",
-        "text": "brachyuran fauna"
+        "text": "brachyuran"
       }
     ]
   },
@@ -3883,10 +3702,10 @@
         "text": "Hindia sphaeroidalis"
       },
       {
-        "start": 112,
+        "start": 118,
         "end": 126,
         "entity_type": "lithology",
-        "text": "basal dolomite"
+        "text": "dolomite"
       },
       {
         "start": 134,
@@ -3998,9 +3817,9 @@
       },
       {
         "start": 86,
-        "end": 108,
+        "end": 98,
         "entity_type": "taxa",
-        "text": "Irdinolophus gen. nov."
+        "text": "Irdinolophus"
       },
       {
         "start": 124,
@@ -4010,9 +3829,9 @@
       },
       {
         "start": 166,
-        "end": 197,
+        "end": 188,
         "entity_type": "taxa",
-        "text": "Irdinolophus? tuiensis sp. nov."
+        "text": "Irdinolophus? tuiensis"
       },
       {
         "start": 244,
@@ -4025,12 +3844,6 @@
         "end": 305,
         "entity_type": "taxa",
         "text": "Teleolophus magnus"
-      },
-      {
-        "start": 287,
-        "end": 298,
-        "entity_type": "taxa",
-        "text": "Teleolophus"
       },
       {
         "start": 340,
@@ -4237,12 +4050,6 @@
     "text": "The Irdinmanhan Mergen fauna may be slightly older than that from Irdin Manha, because of the primitive aspect of its Lophialetes.",
     "entities": [
       {
-        "start": 4,
-        "end": 28,
-        "entity_type": "taxa",
-        "text": "Irdinmanhan Mergen fauna"
-      },
-      {
         "start": 66,
         "end": 77,
         "entity_type": "location",
@@ -4266,12 +4073,6 @@
     "text": "2001 06 15: Larval and juvenile gastropods from a Carboniferous black shale: palaeoecology and implications for the evolution of the Gastropoda. Lethaia, Vol. 34, pp.",
     "entities": [
       {
-        "start": 0,
-        "end": 10,
-        "entity_type": "age",
-        "text": "2001 06 15"
-      },
-      {
         "start": 32,
         "end": 42,
         "entity_type": "taxa",
@@ -4294,12 +4095,6 @@
         "end": 143,
         "entity_type": "taxa",
         "text": "Gastropoda"
-      },
-      {
-        "start": 145,
-        "end": 152,
-        "entity_type": "taxa",
-        "text": "Lethaia"
       }
     ]
   },
@@ -4408,12 +4203,6 @@
         "end": 565,
         "entity_type": "taxa",
         "text": "echinoderm debris"
-      },
-      {
-        "start": 584,
-        "end": 602,
-        "entity_type": "taxa",
-        "text": "shelly fossil taxa"
       }
     ]
   },
@@ -4480,12 +4269,6 @@
         "end": 287,
         "entity_type": "taxa",
         "text": "Coleoloides"
-      },
-      {
-        "start": 321,
-        "end": 339,
-        "entity_type": "taxa",
-        "text": "shelly fossil taxa"
       },
       {
         "start": 351,
@@ -4668,12 +4451,6 @@
         "text": "Gotland"
       },
       {
-        "start": 99,
-        "end": 119,
-        "entity_type": "location",
-        "text": "Universitetsforlaget"
-      },
-      {
         "start": 121,
         "end": 125,
         "entity_type": "location",
@@ -4822,12 +4599,6 @@
         "end": 108,
         "entity_type": "location",
         "text": "Scottish"
-      },
-      {
-        "start": 109,
-        "end": 127,
-        "entity_type": "taxa",
-        "text": "Glencartholm fauna"
       },
       {
         "start": 163,
@@ -5190,12 +4961,6 @@
         "text": "cricetids"
       },
       {
-        "start": 212,
-        "end": 219,
-        "entity_type": "location",
-        "text": "islands"
-      },
-      {
         "start": 249,
         "end": 267,
         "entity_type": "age",
@@ -5218,18 +4983,6 @@
         "end": 374,
         "entity_type": "age",
         "text": "Holocene"
-      },
-      {
-        "start": 400,
-        "end": 415,
-        "entity_type": "location",
-        "text": "lower latitudes"
-      },
-      {
-        "start": 466,
-        "end": 475,
-        "entity_type": "location",
-        "text": "the north"
       },
       {
         "start": 494,
@@ -5352,9 +5105,15 @@
       },
       {
         "start": 321,
+        "end": 329,
+        "entity_type": "location",
+        "text": "Portugal"
+      },
+      {
+        "start": 334,
         "end": 342,
         "entity_type": "location",
-        "text": "Portugal and Tanzania"
+        "text": "Tanzania"
       },
       {
         "start": 365,
@@ -5400,9 +5159,9 @@
     "entities": [
       {
         "start": 77,
-        "end": 86,
-        "entity_type": "facies",
-        "text": "Estuarine"
+        "end": 93,
+        "entity_type": "strata",
+        "text": "Estuarine Series"
       },
       {
         "start": 97,
@@ -5427,12 +5186,6 @@
         "end": 172,
         "entity_type": "taxa",
         "text": "docodont mammals"
-      },
-      {
-        "start": 214,
-        "end": 225,
-        "entity_type": "age",
-        "text": "August 1971"
       }
     ]
   },
@@ -5450,12 +5203,6 @@
         "end": 66,
         "entity_type": "taxa",
         "text": "terrestrial vertebrates"
-      },
-      {
-        "start": 74,
-        "end": 91,
-        "entity_type": "strata",
-        "text": "non-marine strata"
       },
       {
         "start": 74,
@@ -5537,9 +5284,9 @@
       },
       {
         "start": 230,
-        "end": 244,
-        "entity_type": "taxa",
-        "text": "Hatahoko fauna"
+        "end": 238,
+        "entity_type": "location",
+        "text": "Hatahoko"
       },
       {
         "start": 264,
@@ -5591,9 +5338,15 @@
       },
       {
         "start": 432,
-        "end": 457,
+        "end": 440,
+        "entity_type": "location",
+        "text": "Hatahoko"
+      },
+      {
+        "start": 441,
+        "end": 451,
         "entity_type": "taxa",
-        "text": "Hatahoko brachiopod fauna"
+        "text": "brachiopod"
       },
       {
         "start": 501,
@@ -5630,12 +5383,6 @@
         "end": 728,
         "entity_type": "location",
         "text": "North America"
-      },
-      {
-        "start": 736,
-        "end": 757,
-        "entity_type": "location",
-        "text": "mid-equatorial region"
       },
       {
         "start": 765,
@@ -5681,9 +5428,9 @@
     "entities": [
       {
         "start": 52,
-        "end": 74,
+        "end": 65,
         "entity_type": "taxa",
-        "text": "Postepithyris MAKRIDIN"
+        "text": "Postepithyris"
       },
       {
         "start": 113,
@@ -5723,15 +5470,15 @@
       },
       {
         "start": 337,
-        "end": 359,
+        "end": 350,
         "entity_type": "taxa",
-        "text": "P. dubisensis nov. sp."
+        "text": "P. dubisensis"
       },
       {
         "start": 377,
-        "end": 400,
+        "end": 395,
         "entity_type": "taxa",
-        "text": "P. cincta mosensis nov."
+        "text": "P. cincta mosensis"
       },
       {
         "start": 425,
@@ -5920,12 +5667,6 @@
         "text": "Besancon"
       },
       {
-        "start": 393,
-        "end": 407,
-        "entity_type": "location",
-        "text": "Claude-Bernard"
-      },
-      {
         "start": 504,
         "end": 516,
         "entity_type": "location",
@@ -5996,12 +5737,6 @@
         "end": 412,
         "entity_type": "taxa",
         "text": "Ostracods"
-      },
-      {
-        "start": 424,
-        "end": 446,
-        "entity_type": "strata",
-        "text": "early Oligocene strata"
       },
       {
         "start": 424,
@@ -6088,12 +5823,6 @@
         "text": "forests"
       },
       {
-        "start": 307,
-        "end": 323,
-        "entity_type": "location",
-        "text": "highland regions"
-      },
-      {
         "start": 390,
         "end": 428,
         "entity_type": "age",
@@ -6116,12 +5845,6 @@
         "end": 532,
         "entity_type": "age",
         "text": "EOT"
-      },
-      {
-        "start": 642,
-        "end": 655,
-        "entity_type": "location",
-        "text": "lowland areas"
       }
     ]
   },
@@ -6167,15 +5890,9 @@
       },
       {
         "start": 141,
-        "end": 156,
+        "end": 149,
         "entity_type": "taxa",
-        "text": "ostracod genera"
-      },
-      {
-        "start": 202,
-        "end": 214,
-        "entity_type": "taxa",
-        "text": "Lazarus taxa"
+        "text": "ostracod"
       },
       {
         "start": 253,
@@ -6256,12 +5973,6 @@
         "text": "trilobite zones M and N"
       },
       {
-        "start": 471,
-        "end": 480,
-        "entity_type": "taxa",
-        "text": "trilobite"
-      },
-      {
         "start": 506,
         "end": 510,
         "entity_type": "location",
@@ -6334,10 +6045,10 @@
         "text": "eastern North America"
       },
       {
-        "start": 282,
+        "start": 289,
         "end": 306,
         "entity_type": "strata",
-        "text": "higher Bromide Formation"
+        "text": "Bromide Formation"
       },
       {
         "start": 316,
@@ -6386,12 +6097,6 @@
         "end": 299,
         "entity_type": "taxa",
         "text": "graptolite"
-      },
-      {
-        "start": 304,
-        "end": 317,
-        "entity_type": "taxa",
-        "text": "shelly faunas"
       }
     ]
   },
@@ -6533,9 +6238,9 @@
     "entities": [
       {
         "start": 0,
-        "end": 25,
+        "end": 15,
         "entity_type": "taxa",
-        "text": "shashishanensis nom. nov."
+        "text": "shashishanensis"
       },
       {
         "start": 29,
@@ -6623,9 +6328,9 @@
     "entities": [
       {
         "start": 24,
-        "end": 39,
+        "end": 33,
         "entity_type": "taxa",
-        "text": "mammalian fauna"
+        "text": "mammalian"
       },
       {
         "start": 67,
@@ -6647,9 +6352,15 @@
       },
       {
         "start": 146,
+        "end": 150,
+        "entity_type": "lithology",
+        "text": "sand"
+      },
+      {
+        "start": 152,
         "end": 156,
         "entity_type": "lithology",
-        "text": "sand, clay"
+        "text": "clay"
       },
       {
         "start": 162,
@@ -6712,16 +6423,10 @@
     "text": "A small flora, associated with the mammalian fauna, suggests that the animals lived in or on the edge of a subtropical rain forest. The absence of mammals of South American origin strongly suggests that no land connection existed between the two Americas during the lower Pliocene, and the presence of the northern type fauna indicates that no marine portal was present at the isthmus of Tehuantepec during the time of deposition of the Gracias formation.",
     "entities": [
       {
-        "start": 2,
-        "end": 13,
-        "entity_type": "taxa",
-        "text": "small flora"
-      },
-      {
         "start": 35,
-        "end": 50,
+        "end": 44,
         "entity_type": "taxa",
-        "text": "mammalian fauna"
+        "text": "mammalian"
       },
       {
         "start": 107,
@@ -6742,12 +6447,6 @@
         "text": "South American"
       },
       {
-        "start": 206,
-        "end": 210,
-        "entity_type": "facies",
-        "text": "land"
-      },
-      {
         "start": 246,
         "end": 254,
         "entity_type": "location",
@@ -6760,22 +6459,10 @@
         "text": "lower Pliocene"
       },
       {
-        "start": 306,
-        "end": 325,
-        "entity_type": "taxa",
-        "text": "northern type fauna"
-      },
-      {
         "start": 344,
         "end": 350,
         "entity_type": "facies",
         "text": "marine"
-      },
-      {
-        "start": 377,
-        "end": 384,
-        "entity_type": "location",
-        "text": "isthmus"
       },
       {
         "start": 388,
@@ -6796,16 +6483,10 @@
     "text": "A faunule of 30 isolated teeth and jaw fragments from the Cyrena Marls of Offenbach in the Hanau Basin is presented. Though it consists of relatively few specimens, the faunule is astoundingly diverse, and includes didelphids, soricids, talpids, allomyids, sciurids, castorids, cricetids, and one tooth of a viverrid. The composition of the faunule unambiguously indicates a post-Grande Coupure correlation.",
     "entities": [
       {
-        "start": 2,
-        "end": 9,
-        "entity_type": "lithology",
-        "text": "faunule"
-      },
-      {
-        "start": 65,
+        "start": 58,
         "end": 70,
-        "entity_type": "lithology",
-        "text": "Marls"
+        "entity_type": "strata",
+        "text": "Cyrena Marls"
       },
       {
         "start": 74,
@@ -6918,12 +6599,6 @@
         "end": 93,
         "entity_type": "age",
         "text": "Bashkirian-Moscovian"
-      },
-      {
-        "start": 94,
-        "end": 103,
-        "entity_type": "lithology",
-        "text": "sediments"
       },
       {
         "start": 111,
@@ -7205,12 +6880,6 @@
         "text": "north-western Turkey"
       },
       {
-        "start": 124,
-        "end": 133,
-        "entity_type": "lithology",
-        "text": "megablock"
-      },
-      {
         "start": 139,
         "end": 157,
         "entity_type": "lithology",
@@ -7290,9 +6959,9 @@
       },
       {
         "start": 173,
-        "end": 192,
+        "end": 178,
         "entity_type": "lithology",
-        "text": "chert sedimentation"
+        "text": "chert"
       },
       {
         "start": 206,
@@ -7421,9 +7090,9 @@
     "entities": [
       {
         "start": 0,
-        "end": 40,
+        "end": 24,
         "entity_type": "taxa",
-        "text": "Leviceraurus mammiloides n. gen. and sp."
+        "text": "Leviceraurus mammiloides"
       },
       {
         "start": 47,
@@ -7479,12 +7148,6 @@
     "sample_idx": 149,
     "text": "The 4300 m section of predominantly clastic rocks spans about 3.6 Ma, preserves a continuous paleomagnetostratigraphic record, and documents the local stratigraphic ranges of terrestrial mammals during the Blancan and Irvingtonian.",
     "entities": [
-      {
-        "start": 4,
-        "end": 18,
-        "entity_type": "section",
-        "text": "4300 m section"
-      },
       {
         "start": 36,
         "end": 49,
@@ -7559,9 +7222,9 @@
       },
       {
         "start": 174,
-        "end": 189,
+        "end": 183,
         "entity_type": "taxa",
-        "text": "ostracode fauna"
+        "text": "ostracode"
       },
       {
         "start": 232,
@@ -7589,9 +7252,9 @@
       },
       {
         "start": 40,
-        "end": 56,
+        "end": 50,
         "entity_type": "taxa",
-        "text": "brachiopod fauna"
+        "text": "brachiopod"
       },
       {
         "start": 84,
@@ -7691,9 +7354,9 @@
       },
       {
         "start": 130,
-        "end": 158,
+        "end": 149,
         "entity_type": "taxa",
-        "text": "Lemdadella perejoni sp. nov."
+        "text": "Lemdadella perejoni"
       },
       {
         "start": 176,
@@ -7721,9 +7384,9 @@
       },
       {
         "start": 73,
-        "end": 101,
+        "end": 92,
         "entity_type": "taxa",
-        "text": "Lemdadella perejoni sp. nov."
+        "text": "Lemdadella perejoni"
       },
       {
         "start": 106,
@@ -7901,15 +7564,15 @@
     "entities": [
       {
         "start": 2,
-        "end": 18,
+        "end": 12,
         "entity_type": "taxa",
-        "text": "brachiopod fauna"
+        "text": "brachiopod"
       },
       {
         "start": 38,
-        "end": 56,
+        "end": 48,
         "entity_type": "taxa",
-        "text": "brachiopod species"
+        "text": "brachiopod"
       },
       {
         "start": 130,
@@ -7943,9 +7606,9 @@
     "entities": [
       {
         "start": 21,
-        "end": 36,
+        "end": 29,
         "entity_type": "taxa",
-        "text": "ammonoid faunas"
+        "text": "ammonoid"
       },
       {
         "start": 58,
@@ -8045,9 +7708,9 @@
     "entities": [
       {
         "start": 24,
-        "end": 38,
+        "end": 32,
         "entity_type": "taxa",
-        "text": "ammonoid fauna"
+        "text": "ammonoid"
       },
       {
         "start": 50,
@@ -8058,7 +7721,7 @@
       {
         "start": 105,
         "end": 123,
-        "entity_type": "lithology",
+        "entity_type": "strata",
         "text": "Ceratite Sandstone"
       },
       {
@@ -8123,9 +7786,9 @@
       },
       {
         "start": 33,
-        "end": 49,
+        "end": 43,
         "entity_type": "taxa",
-        "text": "brachiopod fauna"
+        "text": "brachiopod"
       },
       {
         "start": 59,
@@ -8175,18 +7838,6 @@
     "sample_idx": 165,
     "text": "This method allows taphonomic signatures to be recognized in thin section along with the presence of coral specimens and growth forms within and between stratigraphic logs. Coral-dominated limestones within the Gornji Grad Beds are represented by rudstones in a packstone-wackestone matrix.",
     "entities": [
-      {
-        "start": 61,
-        "end": 73,
-        "entity_type": "section",
-        "text": "thin section"
-      },
-      {
-        "start": 153,
-        "end": 171,
-        "entity_type": "lithology",
-        "text": "stratigraphic logs"
-      },
       {
         "start": 173,
         "end": 199,
@@ -8392,12 +8043,6 @@
     "text": "For this study, 17 samples from 5 sedimentary sections, spanning a total of approximately 150 m, have been investigated for their palynological content with particular attention on the occurrence of angiosperm pollen.",
     "entities": [
       {
-        "start": 34,
-        "end": 54,
-        "entity_type": "section",
-        "text": "sedimentary sections"
-      },
-      {
         "start": 199,
         "end": 216,
         "entity_type": "taxa",
@@ -8408,25 +8053,12 @@
   {
     "sample_idx": 171,
     "text": "Facies development along the studied section shows systematic variations, suggesting asymmetric sea-level changes with rapid regressions and gradual transgressions.",
-    "entities": [
-      {
-        "start": 29,
-        "end": 44,
-        "entity_type": "section",
-        "text": "studied section"
-      }
-    ]
+    "entities": []
   },
   {
     "sample_idx": 172,
     "text": "A unique example shows soft tissues preserved in cross-section, and these are described and interpreted. The animal lived in shallow, near-shore waters. The place of Loligosepia in coleoid phylogeny is discussed.",
     "entities": [
-      {
-        "start": 49,
-        "end": 62,
-        "entity_type": "section",
-        "text": "cross-section"
-      },
       {
         "start": 125,
         "end": 151,
@@ -8441,9 +8073,9 @@
       },
       {
         "start": 181,
-        "end": 198,
+        "end": 188,
         "entity_type": "taxa",
-        "text": "coleoid phylogeny"
+        "text": "coleoid"
       }
     ]
   },
@@ -8567,9 +8199,9 @@
     "entities": [
       {
         "start": 17,
-        "end": 34,
+        "end": 28,
         "entity_type": "taxa",
-        "text": "radiolarian fauna"
+        "text": "radiolarian"
       },
       {
         "start": 53,
@@ -8627,9 +8259,9 @@
       },
       {
         "start": 272,
-        "end": 302,
+        "end": 295,
         "entity_type": "taxa",
-        "text": "Entactinia meishanensis n. sp."
+        "text": "Entactinia meishanensis"
       },
       {
         "start": 304,
@@ -8764,12 +8396,6 @@
         "text": "clastic deposits"
       },
       {
-        "start": 178,
-        "end": 190,
-        "entity_type": "section",
-        "text": "type section"
-      },
-      {
         "start": 219,
         "end": 234,
         "entity_type": "location",
@@ -8778,7 +8404,7 @@
       {
         "start": 271,
         "end": 290,
-        "entity_type": "lithology",
+        "entity_type": "facies",
         "text": "fluviatile deposits"
       }
     ]
@@ -8798,12 +8424,6 @@
         "end": 149,
         "entity_type": "location",
         "text": "Imler Quarry"
-      },
-      {
-        "start": 177,
-        "end": 192,
-        "entity_type": "taxa",
-        "text": "Steptoean fauna"
       },
       {
         "start": 212,
@@ -8987,9 +8607,9 @@
       },
       {
         "start": 236,
-        "end": 245,
-        "entity_type": "location",
-        "text": "Bonarelli"
+        "end": 251,
+        "entity_type": "strata",
+        "text": "Bonarelli level"
       },
       {
         "start": 277,
@@ -9020,24 +8640,6 @@
         "end": 100,
         "entity_type": "location",
         "text": "Ribbon Reef 5"
-      },
-      {
-        "start": 139,
-        "end": 156,
-        "entity_type": "section",
-        "text": "main reef section"
-      },
-      {
-        "start": 209,
-        "end": 226,
-        "entity_type": "section",
-        "text": "rhodolith section"
-      },
-      {
-        "start": 294,
-        "end": 307,
-        "entity_type": "section",
-        "text": "basal section"
       },
       {
         "start": 341,
@@ -9083,9 +8685,9 @@
       },
       {
         "start": 67,
-        "end": 92,
+        "end": 83,
         "entity_type": "section",
-        "text": "Stratotype Ridge\" section"
+        "text": "Stratotype Ridge"
       },
       {
         "start": 94,
@@ -9104,12 +8706,6 @@
         "end": 127,
         "entity_type": "location",
         "text": "USA"
-      },
-      {
-        "start": 180,
-        "end": 198,
-        "entity_type": "section",
-        "text": "Stratotype-section"
       },
       {
         "start": 280,
@@ -9131,9 +8727,9 @@
     "entities": [
       {
         "start": 15,
-        "end": 29,
+        "end": 23,
         "entity_type": "taxa",
-        "text": "ostracod fauna"
+        "text": "ostracod"
       },
       {
         "start": 52,

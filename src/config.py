@@ -13,9 +13,17 @@ LABEL2ID = {"O": 0, **{label: i + 1 for i, label in enumerate(ENTITY_TYPES)}}
 ID2LABEL = {value: key for key, value in LABEL2ID.items()}
 NUM_LABELS = len(LABEL2ID)
 TYPE_MAPPING = {
-    "litology": "lithology",
-    "taxon": "taxa",
-    "geological_age": "age",
+    # 小写自映射（必须）
+    **{et: et for et in ENTITY_TYPES},
+
+    # 大写和别名映射
+    'TAXA': 'taxa', 'Taxa': 'taxa', 'taxon': 'taxa', 'species': 'taxa', 'genus': 'taxa',
+    'LOCATION': 'location', 'Location': 'location', 'loc': 'location', 'gpe': 'location',
+    'AGE': 'age', 'Age': 'age', 'time': 'age', 'period': 'age', 'geo_age': 'age',
+    'LITHOLOGY': 'lithology', 'Lithology': 'lithology', 'litology': 'lithology', 'lit': 'lithology',
+    'STRATA': 'strata', 'Strata': 'strata', 'stratigraphic_unit': 'strata', 'strat': 'strata',
+    'FACIES': 'facies', 'Facies': 'facies', 'TAPHOFACIES': 'facies',
+    'SECTION': 'section',
 }
 
 MAX_LENGTH = 512

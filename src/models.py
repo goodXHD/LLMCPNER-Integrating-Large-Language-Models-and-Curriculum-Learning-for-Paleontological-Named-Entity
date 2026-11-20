@@ -1,76 +1,105 @@
-"""SciBERT span classifier used by the paper experiments."""
-
+"""
+模型定义模块
+包含 SpanEmbedding 和 SpanBERTForNER
+"""
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from transformers import AutoModel
+from transformers import AutoModel, AutoConfig
 
-from config import ID2LABEL
+class SpanEmbedding(nn.Module):
+    """跨度嵌入: 起始token + 结束token + 宽度嵌入"""
 
+    def __init__(self, hidden_size, max_span_length):
+        super().__init__()
+        self.hidden_size = hidden_size
+        self.max_span_length = max_span_length
+        self.width_embedding = nn.Embedding(max_span_length + 1, hidden_size)
+        nn.init.normal_(self.width_embedding.weight, mean=0.0, std=0.02)
+
+    def forward(self, sequence_output, batch_idx, span_starts, span_ends):
+        start_emb = sequence_output[batch_idx, span_starts]
+        end_emb = sequence_output[batch_idx, span_ends]
+        span_widths = torch.clamp(span_ends - span_starts + 1, 0, self.max_span_length)
+        width_emb = self.width_embedding(span_widths)
+        return torch.cat([start_emb, end_emb, width_emb], dim=-1)
 
 class SpanBERTForNER(nn.Module):
-    def __init__(self, model_name, num_labels, max_span_length):
+    """基于跨度的BERT NER模型"""
+
+    def __init__(self, model_path, num_labels, max_span_length=12):
         super().__init__()
-        self.bert = AutoModel.from_pretrained(model_name)
-        hidden = self.bert.config.hidden_size
-        self.width_embedding = nn.Embedding(max_span_length + 1, 32)
-        self.dropout = nn.Dropout(0.1)
-        self.classifier = nn.Linear(hidden * 2 + 32, num_labels)
+        self.num_labels = num_labels
         self.max_span_length = max_span_length
+        self.config = AutoConfig.from_pretrained(model_path)
+        self.bert = AutoModel.from_pretrained(model_path, config=self.config, attn_implementation='eager')
+        self.hidden_size = self.config.hidden_size
+        self.span_embedding = SpanEmbedding(self.hidden_size, max_span_length)
+        self.classifier = nn.Sequential(nn.Linear(self.hidden_size * 3, self.hidden_size), nn.GELU(), nn.Dropout(0.1), nn.Linear(self.hidden_size, num_labels))
+        self.dropout = nn.Dropout(0.1)
 
-    def span_embedding(self, sequence, batch_index, starts, ends):
-        start_repr = sequence[batch_index, starts]
-        end_repr = sequence[batch_index, ends]
-        widths = (ends - starts + 1).clamp(max=self.max_span_length)
-        return torch.cat((start_repr, end_repr, self.width_embedding(widths)), dim=-1)
+    def predict_spans(self, input_ids, attention_mask, token_type_ids=None, offset_mapping=None, texts=None, threshold=0.5):
+        """预测实体跨度"""
+        self.eval()
+        batch_size = input_ids.size(0)
+        all_predictions = []
+        with torch.no_grad():
+            outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids)
+            sequence_output = outputs.last_hidden_state
+            for i in range(batch_size):
+                seq_len = (attention_mask[i] == 1).sum().item()
+                text = texts[i] if texts else ''
+                mapping = offset_mapping[i] if offset_mapping else None
+                span_starts_list, span_ends_list = ([], [])
+                for start in range(1, seq_len - 1):
+                    for end in range(start, min(start + self.max_span_length, seq_len - 1)):
+                        span_starts_list.append(start)
+                        span_ends_list.append(end)
+                if not span_starts_list:
+                    all_predictions.append([])
+                    continue
+                span_starts_t = torch.tensor(span_starts_list, device=input_ids.device)
+                span_ends_t = torch.tensor(span_ends_list, device=input_ids.device)
+                span_emb = self.span_embedding(sequence_output, i, span_starts_t, span_ends_t)
+                logits = self.classifier(span_emb)
+                probs = torch.softmax(logits, dim=-1)
+                pred_labels = probs.argmax(dim=-1)
+                pred_scores = probs.max(dim=-1).values
+                predictions = []
+                for start, end, label, score in zip(span_starts_list, span_ends_list, pred_labels.tolist(), pred_scores.tolist()):
+                    if label > 0 and score > threshold:
+                        if mapping and start < len(mapping) and (end < len(mapping)):
+                            start_char, end_char = (mapping[start][0], mapping[end][1])
+                            if start_char is not None and end_char is not None:
+                                predictions.append({'start': start_char, 'end': end_char, 'text': text[start_char:end_char], 'type': ID2LABEL[label], 'score': score})
+                predictions.sort(key=lambda x: x['score'], reverse=True)
+                predictions = self._remove_overlapping(predictions)
+                all_predictions.append(predictions)
+        return all_predictions
 
-    def get_span_logits(self, input_ids, attention_mask, token_type_ids, all_starts, all_ends):
-        output = self.bert(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids)
-        sequence = self.dropout(output.last_hidden_state)
-        logits = []
-        for i, (starts, ends) in enumerate(zip(all_starts, all_ends)):
-            if starts.numel() == 0:
-                logits.append(None)
+    def _remove_overlapping(self, predictions):
+        if not predictions:
+            return predictions
+        filtered = []
+        for pred in sorted(predictions, key=lambda x: x['score'], reverse=True):
+            if not any((not (pred['end'] <= existing['start'] or pred['start'] >= existing['end']) for existing in filtered)):
+                filtered.append(pred)
+        return filtered
+
+    def get_span_logits(self, input_ids, attention_mask, token_type_ids, all_span_starts, all_span_ends):
+        """Respect caller mode/autograd: training and MC scoring share this path.
+
+        Callers own eval/no_grad. The legacy forced eval/no_grad here silently
+        disabled MC dropout and prevented this method from supporting training.
+        """
+        sequence_output = self.bert(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids).last_hidden_state
+        sequence_output = self.dropout(sequence_output)
+        all_logits = []
+        for i, (starts, ends) in enumerate(zip(all_span_starts, all_span_ends)):
+            if len(starts) == 0:
+                all_logits.append(None)
                 continue
-            embedding = self.span_embedding(sequence, i, starts.to(sequence.device), ends.to(sequence.device))
-            logits.append(self.classifier(embedding))
-        return logits
-
-    def forward_with_probs(self, input_ids, attention_mask, token_type_ids, all_span_starts,
-                           all_span_ends, all_span_labels, teacher_probs=None,
-                           temperature=1.0, alpha=1.0):
-        logits = self.get_span_logits(input_ids, attention_mask, token_type_ids,
-                                      all_span_starts, all_span_ends)
-        losses = []
-        for item_logits, labels in zip(logits, all_span_labels):
-            if item_logits is not None:
-                losses.append(F.cross_entropy(item_logits, labels.to(item_logits.device)))
-        loss = torch.stack(losses).mean() if losses else input_ids.sum() * 0.0
-        return {"loss": loss, "logits": logits}
-
-    def predict_spans(self, input_ids, attention_mask, token_type_ids, offset_mapping, texts, threshold=0.3):
-        starts, ends = [], []
-        for offsets in offset_mapping:
-            valid = [i for i, (a, b) in enumerate(offsets.tolist()) if b > a]
-            pairs = [(a, b) for pos, a in enumerate(valid) for b in valid[pos:pos + self.max_span_length]]
-            starts.append(torch.tensor([p[0] for p in pairs], dtype=torch.long))
-            ends.append(torch.tensor([p[1] for p in pairs], dtype=torch.long))
-        logits = self.get_span_logits(input_ids, attention_mask, token_type_ids, starts, ends)
-        predictions = []
-        for sample_logits, sample_starts, sample_ends, offsets, text in zip(logits, starts, ends, offset_mapping, texts):
-            entities = []
-            if sample_logits is not None:
-                probs = torch.softmax(sample_logits, dim=-1)
-                scores, labels = probs[:, 1:].max(dim=-1)
-                labels = labels + 1
-                for score, label, start, end in zip(scores, labels, sample_starts, sample_ends):
-                    if float(score) < threshold:
-                        continue
-                    char_start = int(offsets[start, 0])
-                    char_end = int(offsets[end, 1])
-                    entities.append({"start": char_start, "end": char_end,
-                                     "text": text[char_start:char_end], "type": ID2LABEL[int(label)],
-                                     "score": float(score)})
-            predictions.append(entities)
-        return predictions
-
+            span_emb = self.span_embedding(sequence_output, i, starts.to(input_ids.device), ends.to(input_ids.device))
+            all_logits.append(self.classifier(span_emb))
+        return all_logits
+from config import ID2LABEL

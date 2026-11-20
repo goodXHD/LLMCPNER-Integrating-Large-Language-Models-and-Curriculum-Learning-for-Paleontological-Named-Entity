@@ -1,0 +1,25 @@
+{
+  "taxa": [
+    "Olenellus",
+    "Redlichia"
+  ],
+  "strata": [
+    "Xuanwei Formation",
+    "Longmaxi Formation"
+  ],
+  "location": [
+    "China"
+  ],
+  "section": [
+    "Nammal Gorge section"
+  ],
+  "lithology": [
+    "sandstone"
+  ],
+  "facies": [
+    "shallow-marine facies"
+  ],
+  "age": [
+    "early Smithian"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "seed": 13,
+  "batch_size": 8,
+  "negative_ratio": 15,
+  "learning_rate": 2e-05,
+  "prediction_threshold": 0.3
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "file": "src/config.py",
+    "source": "reviewer3_experiments_20261103/code/config.py",
+    "original_sha256": "c85bbf37a9eb5bb1a3d7d44b571acee0ccc903450efbd2b01d18bfbd542c4c14"
+  },
+  {
+    "file": "src/dataset.py",
+    "source": "reviewer3_experiments_20261103/code/dataset.py",
+    "original_sha256": "01c6c165b3520d51ba256cb8e203f9c1833abe5bbfcc811b56bc1765bc55384f"
+  },
+  {
+    "file": "src/metrics.py",
+    "source": "reviewer3_experiments_20261103/code/metrics.py",
+    "original_sha256": "a54abf9276637efc07f81b01dc49000dd76de7fd4458cf9ab060476a29b71e26"
+  },
+  {
+    "file": "src/models.py",
+    "source": "reviewer3_experiments_20261103/code/models.py",
+    "adaptation": "Removed unused distillation and probability-decoding methods; active method ASTs unchanged."
+  },
+  {
+    "file": "src/engine.py",
+    "source": "reviewer3_experiments_20261103/code/train.py",
+    "adaptation": "Extracted data validation, seeding, loading, model creation and evaluation unchanged."
+  },
+  {
+    "file": "src/aggregate.py",
+    "source": "balanced_voter_curriculum_20261106/aggregate.py",
+    "original_sha256": "6c22b202d6b491822c78ba63077723b538d6f023e5026e5da423cd5f30cf003f"
+  },
+  {
+    "file": "src/train.py",
+    "source": "stage_earlystop_curriculum_20261106/worker.py",
+    "original_sha256": "9eebd8bebea20c5d903924d1f4ddd09cf82a5ce6977c9aa06993928b16a1e7bc"
+  },
+  {
+    "file": "scripts/annotate.py",
+    "source": "server9_source_20261103/annotate_abstracts_only.py",
+    "original_sha256": "52071a47d1d8fd790cb9ee21bfc41d863ad350ed98423d93a71344af68d5826e"
+  },
+  {
+    "file": "scripts/augmentation_strategies.py",
+    "source": "server9_source_20261103/augment_v2_api.py",
+    "original_sha256": "1db38a8c2137cb3eec801a80aebd3663b5e00a42d728ddfa74db5558b42b7681"
+  },
+  {
+    "file": "scripts/segment.py",
+    "source": "server9_source_20261103/segment_data.py",
+    "original_sha256": "64083d865471285e93346eac833167b16fb0ca1a8a7d10f9e7439ff6bdcc6e17"
+  },
+  {
+    "file": "scripts/cluster_sample.py",
+    "source": "manuscript_e17_revision_20261106/provenance_audit/k-means__extract_cluster_samples.py",
+    "original_sha256": "4b69fdf49631c9793c9ca03ef34cc994cd97cdfd5c171017bdfebee07d06eba6"
+  }
+]

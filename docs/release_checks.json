@@ -1,0 +1,19 @@
+{
+  "status": "Validated portable release of the complete LLMCPNER method",
+  "repository": "goodXHD/LLMCPNER-Integrating-Large-Language-Models-and-Curriculum-Learning-for-Paleontological-Named-Entity",
+  "checks": {
+    "python_compilation": "pass",
+    "credentials_and_personal_paths_scan": "pass",
+    "active_model_methods_equal_archived_AST": "pass",
+    "weighting_mask_loss_equal_archived_AST": "pass",
+    "gradient_masking_and_matching_smoke": "pass",
+    "archived_voter_aggregation": "110905 positive-span scores and curriculum assignments exactly match",
+    "archived_prediction_rescoring": "strict F1 84.6418996553%, partial F1 89.5442359249%",
+    "end_to_end_tiny_model": "Three voter training/scoring, aggregation, three-stage early-stopping training, and CPU saved-model evaluation; not a full-corpus retraining"
+  },
+  "tested_runtime": {
+    "python": "3.12.13",
+    "torch": "2.10.0+cu128",
+    "transformers": "4.57.6"
+  }
+}

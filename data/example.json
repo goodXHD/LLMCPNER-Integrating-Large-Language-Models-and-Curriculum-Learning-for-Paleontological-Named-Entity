@@ -1,0 +1,19 @@
+[
+  {
+    "text": "Olenellus occurs in the Xuanwei Formation.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "text": "Olenellus",
+        "entity_type": "taxa"
+      },
+      {
+        "start": 24,
+        "end": 41,
+        "text": "Xuanwei Formation",
+        "entity_type": "strata"
+      }
+    ]
+  }
+]
