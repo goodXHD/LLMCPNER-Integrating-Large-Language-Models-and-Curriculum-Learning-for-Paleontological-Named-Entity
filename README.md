@@ -39,7 +39,7 @@ The internal label `strata` is retained for compatibility with saved data and ch
 | Domain-augmented training data | 10,000 | 64,791 |
 | Manually annotated evaluation data | 188 | 1,281 |
 
-`data/corrected_test_gold.json` contains the 188 manually annotated texts. Initial and augmented training corpora, source PDFs, domain dictionaries, and model weights are not bundled. `data/example.json` is a short, self-created format example.
+`data/corrected_test_gold.json` contains the 188 manually annotated texts. The archived training corpora and model weights are available in the linked Hugging Face repositories below. Source PDFs and the domain dictionary are not bundled. `data/example.json` is a short, self-created format example.
 
 The 188 texts were also used for early stopping and model selection in the recorded experiments. Their reported performance is therefore not an independent held-out estimate. For new experiments, supply separate development and final evaluation files.
 
@@ -87,6 +87,33 @@ hf download allenai/scibert_scivocab_uncased --local-dir encoders/scibert
 ```
 
 API-backed scripts read `OPENAI_API_KEY`, `OPENAI_BASE_URL`, and `LLM_MODEL` from the environment. Use an OpenAI-compatible service, including a locally served open-weight model if desired. No API calls are made by voter training, main-model training, or inference.
+
+## Released data and checkpoints
+
+- [Final model and three voters](https://huggingface.co/xhd521/LLMCPNER)
+- [Training data, manual reference, confidence assignments, and bootstrap indices](https://huggingface.co/datasets/xhd521/LLMCPNER-data)
+
+Both repositories provide the fixed release tag `revised-2026-11-20`, file manifests with SHA-256 values, and artifact-specific documentation.
+
+```bash
+hf download xhd521/LLMCPNER \
+  --revision revised-2026-11-20 --local-dir checkpoints/LLMCPNER
+hf download xhd521/LLMCPNER-data --repo-type dataset \
+  --revision revised-2026-11-20 --local-dir released_data
+
+python src/evaluate.py \
+  --checkpoint checkpoints/LLMCPNER/final_model/model.pt \
+  --encoder checkpoints/LLMCPNER/encoder \
+  --input released_data/data/corrected_test_gold.json \
+  --output-dir outputs/released_model_evaluation \
+  --device cuda:0
+```
+
+The released full-model state dict includes its SciBERT parameters. Evaluation initializes the architecture from the supplied configuration and loads the complete checkpoint strictly, so the configuration/tokenizer directory does not need a second copy of pretrained encoder weights. Fresh training still requires the pretrained SciBERT weights.
+
+The archived checkpoint was freshly evaluated before release and reproduced strict F1 **84.64%** and partial F1 **89.54%**. See its `checkpoint_verification.json`. The manual-reference scope described above still applies.
+
+The dataset's `confidence/memberships.json` matches the exact downloaded `data/training_combined.json`. To reuse these assignments, keep that training file unchanged, including record order and byte formatting. Regenerate scores if constructing a different training input.
 
 ## Train the full method
 

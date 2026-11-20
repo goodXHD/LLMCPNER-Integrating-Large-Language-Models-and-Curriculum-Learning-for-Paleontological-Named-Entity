@@ -2,3 +2,4 @@ numpy>=1.24,<3
 torch>=2.2,<3
 transformers>=4.40,<5
 tqdm>=4.66
+huggingface_hub>=0.34,<1

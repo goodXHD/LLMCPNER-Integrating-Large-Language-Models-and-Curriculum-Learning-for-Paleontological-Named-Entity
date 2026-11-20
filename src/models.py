@@ -27,12 +27,16 @@ class SpanEmbedding(nn.Module):
 class SpanBERTForNER(nn.Module):
     """基于跨度的BERT NER模型"""
 
-    def __init__(self, model_path, num_labels, max_span_length=12):
+    def __init__(self, model_path, num_labels, max_span_length=12, load_encoder_weights=True):
         super().__init__()
         self.num_labels = num_labels
         self.max_span_length = max_span_length
         self.config = AutoConfig.from_pretrained(model_path)
-        self.bert = AutoModel.from_pretrained(model_path, config=self.config, attn_implementation='eager')
+        if load_encoder_weights:
+            self.bert = AutoModel.from_pretrained(model_path, config=self.config, attn_implementation='eager')
+        else:
+            self.config._attn_implementation = 'eager'
+            self.bert = AutoModel.from_config(self.config)
         self.hidden_size = self.config.hidden_size
         self.span_embedding = SpanEmbedding(self.hidden_size, max_span_length)
         self.classifier = nn.Sequential(nn.Linear(self.hidden_size * 3, self.hidden_size), nn.GELU(), nn.Dropout(0.1), nn.Linear(self.hidden_size, num_labels))

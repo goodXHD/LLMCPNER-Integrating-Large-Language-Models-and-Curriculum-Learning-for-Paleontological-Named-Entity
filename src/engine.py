@@ -63,7 +63,8 @@ def loader(dataset, batch_size, seed, shuffle=True):
                       generator=torch.Generator().manual_seed(seed))
 
 def new_model(args, device):
-    return SpanBERTForNER(args.encoder, NUM_LABELS, MAX_SPAN_LENGTH).to(device)
+    return SpanBERTForNER(args.encoder, NUM_LABELS, MAX_SPAN_LENGTH,
+                          load_encoder_weights=not getattr(args, 'initialize_from_config', False)).to(device)
 
 def final_evaluation(model, tokenizer, samples, args, device, out):
     dataset = NERDataset(samples, tokenizer, neg_pos_ratio=0)

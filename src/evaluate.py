@@ -23,6 +23,8 @@ def main():
   data=[{'text':s['text'],'entities':[]} for s in data]
  else:data=engine.read_samples(a.input)
  device=torch.device(a.device)
+ # The full state dict already contains encoder weights.
+ a.initialize_from_config=True
  model=engine.new_model(a,device)
  model.load_state_dict(torch.load(a.checkpoint,map_location=device,weights_only=True),strict=True)
  tok=AutoTokenizer.from_pretrained(a.encoder,local_files_only=True)

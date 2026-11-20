@@ -17,12 +17,12 @@
   {
     "file": "src/models.py",
     "source": "reviewer3_experiments_20261103/code/models.py",
-    "adaptation": "Removed unused distillation and probability-decoding methods; active method ASTs unchanged."
+    "adaptation": "Removed unused distillation/probability methods; span logits and decoder unchanged. Added optional config-only encoder initialization for loading complete published checkpoints; pretrained initialization remains the training default."
   },
   {
     "file": "src/engine.py",
     "source": "reviewer3_experiments_20261103/code/train.py",
-    "adaptation": "Extracted data validation, seeding, loading, model creation and evaluation unchanged."
+    "adaptation": "Extracted data validation, seeding, loading and evaluation unchanged; model creation forwards the optional config-only initialization setting for complete-checkpoint inference."
   },
   {
     "file": "src/aggregate.py",
