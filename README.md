@@ -4,8 +4,6 @@ Code for **LLMCPNER: Integrating Large Language Models and Curriculum Learning f
 
 LLMCPNER constructs weak supervision with a large language model, expands domain entity contexts through three augmentation strategies, and trains a SciBERT span recognizer using multi-voter confidence and cumulative curriculum learning. At inference time, only the trained span recognizer is required.
 
-[中文说明](README_zh.md)
-
 ## Method
 
 1. **Representative-text annotation.** Encode candidate abstracts with `all-MiniLM-L6-v2`, apply K-means with 100 clusters (`random_state=42`, `n_init=10`), and sample up to 30 records per cluster for LLM annotation.
